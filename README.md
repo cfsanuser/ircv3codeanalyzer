@@ -1,5 +1,5 @@
 # ircv3codeanalyzer
-Analyzes code and determines a percent and shows which feature set it is weak in.
+Scans any Python source file for 44 IRCv3 features across specs 3.1, 3.2, 3.3, and drafts via regex pattern matching. Outputs a weighted percentile score with letter grade (A+–F), per-spec coverage breakdowns with bar charts, lists detected and missing features, and provides prioritized implementation recommendations. Usage: python ircv3analyzer.py <sourcefile.py>
 
 Example:
 
