@@ -1,6 +1,8 @@
 # ircv3codeanalyzer
 Scans any Python source file for 44 IRCv3 features across specs 3.1, 3.2, 3.3, and drafts via regex pattern matching. Outputs a weighted percentile score with letter grade (A+–F), per-spec coverage breakdowns with bar charts, lists detected and missing features, and provides prioritized implementation recommendations. Usage: python ircv3analyzer.py <sourcefile.py>
 
+It works on any text file — C, JavaScript, Java, Rust, Go, etc. The analysis is pure regex on raw source, so language doesn't matter. That said, some patterns are tuned for snake_case (e.g., server_time, away_notify) which is Python/idiomatic, so detection in camelCase codebases may be slightly weaker.
+
 Example:
 
 ================================================================
